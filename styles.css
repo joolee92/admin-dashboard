@@ -14,11 +14,14 @@ ul {
 }
 
 .sidebar {
+    padding: 15px;
   background-color: #29b1fb;
   grid-area: 1/1/7/2;
+  color: white;
 }
 
 .headbar {
+    padding: 20px;
   grid-area: 1/2/2/7;
   display: flex;
   flex-direction: column;
@@ -27,17 +30,24 @@ ul {
 .top {
   display: flex;
 }
+.top img {
+    height: 20px;
+}
 
 .bottom {
   display: flex;
 }
+.bottom img {
+    height: 40px;
+}
 
 .left {
-    display: inline;
+    display: flex;
   flex-grow: 3;
 }
+
 .right {
-    display: inline;
+    display: flex;
   flex-grow: 1;
 }
 
@@ -59,4 +69,8 @@ ul {
 
 .trending {
   grid-area: 4/4/6/5;
+}
+
+.projectgrid {
+    display: grid;
 }
