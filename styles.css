@@ -14,14 +14,14 @@ ul {
 }
 
 .sidebar {
-    padding: 15px;
+  padding: 15px;
   background-color: #29b1fb;
   grid-area: 1/1/7/2;
   color: white;
 }
 
 .headbar {
-    padding: 20px;
+  padding: 20px;
   grid-area: 1/2/2/7;
   display: flex;
   flex-direction: column;
@@ -31,27 +31,28 @@ ul {
   display: flex;
 }
 .top img {
-    height: 20px;
+  height: 20px;
 }
 
 .bottom {
   display: flex;
 }
 .bottom img {
-    height: 40px;
+  height: 40px;
 }
 
 .left {
-    display: flex;
+  display: flex;
   flex-grow: 3;
 }
 
 .right {
-    display: flex;
+  display: flex;
   flex-grow: 1;
 }
 
 .main {
+  padding: 18px;
   background-color: #dbecf5;
   grid-area: 2/2/7/7;
   display: grid;
@@ -72,5 +73,44 @@ ul {
 }
 
 .projectgrid {
-    display: grid;
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+  gap: 15px;
 }
+
+.card {
+  padding: 20px;
+  background-color: white;
+}
+
+a {
+  display: flex;
+  align-items: center;
+
+  padding: 8px;
+}
+
+.dashboard {
+    margin-bottom: 30px;
+}
+
+.dashboard svg {
+  height: 50px;
+  width: 20px;
+}
+
+a svg {
+    height: 20px;
+    width: 10px;
+    margin-right: 10px;
+    flex-basis: 20%;
+}
+
+a h3 {
+    flex-basis: 80%;
+}
+
+.primary {
+    margin-bottom: 30px;
+}
+
