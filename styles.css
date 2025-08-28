@@ -135,6 +135,7 @@ button {
   border-color: rgb(246, 209, 159);
   border-width: 5px;
   max-height: fit-content;
+  box-shadow: 3px 2px #ccc;
 }
 
 .desc {
