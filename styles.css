@@ -10,7 +10,7 @@ ul {
 .container {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat((6, 1fr));
+  grid-template-rows: repeat(6, 1fr);
 }
 
 .sidebar {
@@ -22,6 +22,8 @@ ul {
 
 .headbar {
   padding: 20px;
+  margin-left: 25px;
+  margin-right: 25px;
   grid-area: 1/2/2/7;
   display: flex;
   flex-direction: column;
@@ -29,29 +31,72 @@ ul {
 
 .top {
   display: flex;
+  margin-bottom: 20px;
 }
 .top img {
   height: 20px;
+}
+
+input {
+    margin-left: 20px;
+    border-radius: 20px;
+    padding: 5px 10px;
+    outline: none;
+    border: 1px solid #ccc;
+    background-color: rgb(205, 215, 232);
+    width: 60vh;
+    height: 3vh;
 }
 
 .bottom {
   display: flex;
 }
 .bottom img {
-  height: 40px;
+  height: 60px;
+}
+button {
+    background-color: #29b1fb;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 30px;
+    display: inline-block;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 30px;
 }
 
 .left {
   display: flex;
-  flex-grow: 3;
+  flex-basis: 65%;
 }
+.greeting {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    align-self: center;
+}
+
+
+.top .right {
+    justify-content: flex-end;
+    gap: 25px;
+}
+
+.bottom .right {
+    justify-content: space-around;
+    align-self: center;
+}
+
 
 .right {
   display: flex;
-  flex-grow: 1;
+  flex-basis: 35%;
+  margin-right: 20px;
 }
 
 .main {
+    margin-top: -20px;
   padding: 18px;
   background-color: #dbecf5;
   grid-area: 2/2/7/7;
@@ -113,4 +158,3 @@ a h3 {
 .primary {
     margin-bottom: 30px;
 }
-
