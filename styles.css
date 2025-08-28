@@ -96,7 +96,7 @@ button {
 }
 
 .main {
-    margin-top: -20px;
+    margin-top: -50px;
   padding: 18px;
   background-color: #dbecf5;
   grid-area: 2/2/7/7;
@@ -121,11 +121,33 @@ button {
   display: grid;
   grid-template: repeat(3, 1fr) / repeat(2, 1fr);
   gap: 15px;
+  margin-top: 15px;
+  margin-right: 20px;
 }
 
 .card {
-  padding: 20px;
+  padding: 30px;
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  border-left-style: solid;
+  border-color: rgb(246, 209, 159);
+  border-width: 5px;
+  max-height: fit-content;
+}
+
+.desc {
+    flex-basis: 75%;
+}
+
+.icons {
+    margin-top: 15px;
+    flex-basis: 25%;
+    align-self: flex-end;
+}
+.icons svg {
+    height: 25px;
 }
 
 a {
@@ -158,3 +180,5 @@ a h3 {
 .primary {
     margin-bottom: 30px;
 }
+
+
